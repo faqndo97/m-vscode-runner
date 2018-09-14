@@ -2,8 +2,12 @@
     "name": "m-vscode-runner",
     "displayName": "m vscode runner",
     "description": "Make easier run your test with m gem on rails projects.",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "publisher": "faqndo97",
+    "repository": {
+    "type": "git",
+      "url": "https://github.com/faqndo97/m-vscode-runner"
+    },
     "engines": {
         "vscode": "^1.27.0"
     },
