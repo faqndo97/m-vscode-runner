@@ -27,16 +27,6 @@ m VSCode runner help you to run specific test on your suite onli¡y selecting hi
 
 * Have installed [m gem](https://github.com/qrush/m)
 
-## Release Notes
-
-### 1.0.0
-
-Initial release of m VSCode runner.
-
-### 1.0.1
-
-Add support for older releases
-
 ## Issues
 
 If you find some issue with this extension please report him.
