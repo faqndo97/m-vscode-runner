@@ -1,65 +1,38 @@
-# m-vscode-runner README
+# m VSCode Runner
 
-This is the README for your extension "m-vscode-runner". After writing up a brief description, we recommend including the following sections.
+VSCode extension to integrate [m](https://github.com/qrush/m) gem (is a Test::Unit runner that can run test by line number, this is his) into VSCode.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+m VSCode runner help you to run specific test on your suite onli¡y selecting him and calling the extension.
 
-For example if there is an image subfolder under your extension project workspace:
+**Example of use:**
 
-\!\[feature X\]\(images/feature-x.png\)
+![animation](https://media.giphy.com/media/WS5watNCROPHrjsG0h/giphy.gif)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## How to use
+1. **Install the 'm' gem**
 
+    For install this gem on your repo, follow the installation steps on this [documentation](https://github.com/qrush/m)
+2. **Call extension**
+
+    First select the first line of your specific test.
+    
+    You will have two method for run the extension. First is oopen the Command Palette in VSCode (⇧⌘P or Ctrl+Shift+P) and search this command `M Vscode Runner: Run test with m gem`.
+
+    The second option is hit right click on this line after selection and select the option `M Vscode Runner: Run test with m gem`.
+
+    Any of this ways will open a terminal inside VSCode and run the m command to run this test, like `m filePath:currentLine`
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+* Have installed [m gem](https://github.com/qrush/m)
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
+Initial release of m VSCode runner.
 
-### 1.0.1
+## Issues
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+If you find some issue with this extension please report him.
