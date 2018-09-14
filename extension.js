@@ -14,7 +14,7 @@ exports.activate = function activate(context) {
 
     terminal.show()
     terminal.sendText(`m ${currentFilePath}:${currentLine}`)
-    vscode.window.showInformationMessage('')
+    vscode.window.showInformationMessage(`Test of ${currentFilePath} on ${currentLine} is running`)
   });
 
   context.subscriptions.push(disposable)
