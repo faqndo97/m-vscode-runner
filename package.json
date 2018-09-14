@@ -11,26 +11,33 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.runTest"
     ],
     "main": "./extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.runTest",
+                "title": "M Vscode Runner: Run test with m gem"
             }
-        ]
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "extension.runTest",
+                    "group": "Test"
+                }
+            ]
+        }
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
-        "typescript": "^2.6.1",
-        "vscode": "^1.1.21",
-        "eslint": "^4.11.0",
+        "@types/mocha": "^2.2.42",
         "@types/node": "^8.10.25",
-        "@types/mocha": "^2.2.42"
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21"
     }
 }
